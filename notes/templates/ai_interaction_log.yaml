@@ -1,0 +1,20 @@
+task: search | scaffold | scale
+date: YYYY-MM-DD
+model: provider/model@version
+system_prompt: path/to/prompt.yaml
+inputs:
+  - path/to/file_or_snippet
+controls:
+  temperature: 0.1
+  seed: 0
+  max_tokens: 800
+outputs:
+  artifact: path/to/output
+  summary: >
+    What changed? Keep to 2–3 sentences.
+provenance:
+  citations:
+    - doi: 10.xxxx/...
+    - url: https://...
+notes: >
+  Next step, doubts, decisions.

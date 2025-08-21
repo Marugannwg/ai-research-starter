@@ -1,0 +1,35 @@
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.code-workspace
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# R
+.Rhistory
+.Rproj.user/
+
+# Notebooks
+*.ipynb_checkpoints/
+
+# Data
+data/raw/*
+!data/raw/.keep
+data/processed/*
+!data/processed/.keep
+
+# Logs
+logs/*
+!logs/ai/.keep
+
+# Builds
+site/
+dist/
+*.egg-info/
