@@ -1,35 +1,30 @@
-# OS / IDE
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
-*.code-workspace
-
-# Python
-__pycache__/
-*.py[cod]
+# Environments & caches
 .venv/
-venv/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
 .env
+.env.*
+*.pyc
 
-# R
-.Rhistory
-.Rproj.user/
-
-# Notebooks
-*.ipynb_checkpoints/
-
-# Data
+# Data (keep placeholders only)
 data/raw/*
-!data/raw/.keep
+!data/raw/.gitkeep
+data/interim/*
+!data/interim/.gitkeep
 data/processed/*
-!data/processed/.keep
+!data/processed/.gitkeep
 
 # Logs
-logs/*
-!logs/ai/.keep
+logs/**
+!logs/.gitkeep
+!logs/sessions/.gitkeep
+!logs/decisions/.gitkeep
 
-# Builds
-site/
-dist/
-*.egg-info/
+# Notebooks outputs
+notebooks/*.ipynb
+!notebooks/.gitkeep
+
+# Misc
+*.log
+.cache/

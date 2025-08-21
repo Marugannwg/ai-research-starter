@@ -1,0 +1,19 @@
+task: stance_classification
+labels:
+  - pro: "supports X"
+  - anti: "opposes X"
+  - neutral: "no clear stance"
+definitions:
+  positive_example_pro: "Example of support here."
+  negative_example_pro: "Counter‑example here."
+decision_rules:
+  - "If sarcasm, infer stance from target polarity."
+  - "If multiple targets, choose primary by frequency."
+uncertainty_policy: "If <0.6 confidence, emit 'unsure'."
+output_schema:
+  fields: [id, label, confidence, rationale]
+quality_control:
+  gold_fraction: 0.1
+  double_pass: true
+  adjudication: "disagree -> route to human"
+version: "0.1.0"

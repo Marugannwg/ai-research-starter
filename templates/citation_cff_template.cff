@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+title: "AI for Computational Social Science — 4S Guide"
+authors:
+  - family-names: "LastName"
+    given-names: "FirstName"
+date-released: "2025-08-21"
+version: "0.1.0"
